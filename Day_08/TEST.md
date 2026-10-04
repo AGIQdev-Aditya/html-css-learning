@@ -50,3 +50,22 @@ To fix this, the developer must set `position: relative;` (or `absolute`/`fixed`
 3. Change its `z-index` from `1` to `20`.
 4. Refresh the page: Observe how the blue box instantly leaps to the very top layer, covering both the orange and green boxes!
 5. In `.card`, temporarily comment out `position: relative;`. Refresh and observe where the red sale badge flies — it shoots straight to the top right corner of your whole browser window!
+
+<details>
+<summary>🔍 Reveal Practical Challenge Explanation</summary>
+
+```css
+/* In Day_08/style.css: */
+.box-1 {
+  background: rgba(59, 130, 246, 0.85);
+  top: 20px;
+  left: 20px;
+  z-index: 20; /* 20 beats Box 2 (z-index: 5) and Box 3 (z-index: 10), leaping to the very top! */
+}
+
+/* If you comment out position: relative on .card: */
+.card {
+  /* position: relative;  <-- Badge escapes container boundary! */
+}
+```
+</details>

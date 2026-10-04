@@ -58,6 +58,27 @@ Because under the default `content-box`, adding padding or borders expands the p
 
 ### 🛠️ Practical Challenge (5 Minutes)
 1. Open `Day_07/index.html` in your browser.
-2. In `Day_07/style.css`, locate the `.box-content` class.
-3. Change its padding from `24px` to `48px`. Notice how the box visibly balloons in size and shifts other content.
-4. Now locate `.box-border` and increase its padding to `48px`. Notice how the box **remains exactly 320px wide**, simply compressing the inner text. That is the power of `border-box`!
+2. In `Day_07/style.css`, locate the `.content-box-card` class (around line 40).
+3. Change its padding from `30px` to `60px`. Notice how the box visibly balloons in size and pushes other content.
+4. Now locate `.border-box-card` (line 49) and increase its padding to `60px`. Notice how the box **remains exactly 280px wide**, simply compressing the inner text. That is the superpower of `border-box`!
+
+<details>
+<summary>🔍 Reveal Practical Challenge Explanation</summary>
+
+```css
+/* In Day_07/style.css: */
+.content-box-card {
+  box-sizing: content-box;
+  width: 280px;
+  padding: 60px; /* Expands rendered width to: 280 + 60 + 60 + 12 = 412px! */
+  border: 6px solid #EF4444;
+}
+
+.border-box-card {
+  box-sizing: border-box;
+  width: 280px;
+  padding: 60px; /* Absorbs padding inside! Rendered width remains locked at 280px! */
+  border: 6px solid #16A34A;
+}
+```
+</details>

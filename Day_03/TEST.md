@@ -54,3 +54,24 @@ You must omit **1 `<td>` in Row 2** and **1 `<td>` in Row 3** at that specific c
 2. In Exercise 3, add a third shift: `"Night (22:00 - 06:00)"` with 1 inspector and `PASS` status.
 3. Update the `tfoot` total from `"3 Units"` to `"4 Units"`.
 4. Refresh and make sure the table borders stay perfectly aligned!
+
+<details>
+<summary>🔍 Reveal Practical Challenge Solution Code</summary>
+
+```html
+<!-- Inside <tbody>: -->
+<tr>
+  <td><strong>Night (22:00 - 06:00)</strong></td>
+  <td>Aditya Agnihotri</td>
+  <td>BATCH-2026-C1</td>
+  <td>None (Nominal)</td>
+  <td>PASS</td>
+</tr>
+
+<!-- Inside <tfoot>: -->
+<tr>
+  <td colspan="4" align="right"><strong>Total Verified Units:</strong></td>
+  <td><strong>4 Units</strong></td>
+</tr>
+```
+</details>

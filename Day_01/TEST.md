@@ -50,8 +50,18 @@ Only **B) `<title>`** requires a closing tag (`</title>`).
 ---
 
 ### 🛠️ Practical Challenge (5 Minutes)
-Open `Day_01/index.html` and verify that you have:
-1. One and only one `<h1>` tag with your full name.
-2. A `<p>` paragraph with at least one `<strong>` phrase and one `<em>` phrase.
-3. A horizontal divider `<hr>` separating your title from the content.
-4. Save and open in your browser (`file:///home/luca/Workspace/HTML Learning/Day_01/index.html`).
+1. Open `Day_01/index.html` in your browser.
+2. In Exercise 3, add a third paragraph containing an `<em>` phrase and a `<code>` inline tag.
+3. Add a `<mark>` highlight tag around your college name ("NIAT ADYPU").
+4. Save and refresh in Chromium to verify!
+
+<details>
+<summary>🔍 Reveal Practical Challenge Solution Code</summary>
+
+```html
+<p>
+  Studying at <mark>NIAT — Ajeenkya DY Patil University</mark> in Pune. 
+  Learning <em>first-principles web architecture</em> with Linux command <code>cat index.html</code>.
+</p>
+```
+</details>

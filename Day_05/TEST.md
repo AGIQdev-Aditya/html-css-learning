@@ -52,5 +52,18 @@ HTML5 specifications strictly state that a document must have only one visible `
 1. Open `Day_05/index.html` in your browser.
 2. Open Chrome Developer Tools (`Ctrl + Shift + I` or Right Click → *Inspect*).
 3. Hover over the `<header>`, `<main>`, `<section>`, and `<article>` tags in the Elements tree. Notice how each block element highlights across the entire screen width!
-4. Notice how `<span>Gemini 3.8 Flash</span>` only highlights around those exact words because it is inline!
-5. Celebrate: **Phase 1 (HTML5 Mastery) is officially COMPLETE!** 🎉
+4. Add a third `<article>` under `#specimens` representing a custom inspected part with its own `<h3>`, `<p>`, and `<small>` timestamp.
+
+<details>
+<summary>🔍 Reveal Practical Challenge Solution Code</summary>
+
+```html
+<!-- Inside <section id="specimens">: -->
+<article>
+  <h3>Batch #2026-A3: Automotive CAN Transceiver</h3>
+  <p><strong>Status:</strong> PASS (Nominal 5V Bus Differential)</p>
+  <p>Transceiver loopback verified across 500kbps packet streams.</p>
+  <small>Logged: October 4, 2026 by Aditya Agnihotri</small>
+</article>
+```
+</details>

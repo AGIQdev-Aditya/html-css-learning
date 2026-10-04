@@ -46,11 +46,18 @@ Each daily lesson is strictly timed to respect your college study schedule:
 ```text
 HTML Learning/
 ├── README.md               # Master curriculum & progress tracking
+├── OFFLINE_CHEAT_SHEET.md  # 📘 100% Offline Master Reference & Viva Guide
+├── assets/                 # Offline vector schematics & media
+│   └── circuit_specimen.svg
 ├── Day_01/                 # Skeleton, Text Hierarchy & Semantics
 │   ├── NOTES.md
 │   ├── index.html
 │   └── TEST.md
 ├── Day_02/                 # Hyperlinks, Paths, Images & Media
+│   ├── NOTES.md
+│   ├── index.html
+│   ├── specimen_report.html
+│   └── TEST.md
 ├── Day_03/                 # Lists & Complex Tables
 ├── Day_04/                 # Forms & Input Validation
 ├── Day_05/                 # Modern Semantic Architecture

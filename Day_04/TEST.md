@@ -54,3 +54,14 @@ Inside a form, any `<button>` without an explicit `type` behaves as a submit tri
 2. Try submitting the form with an empty name or invalid email — watch the browser's native validation popup stop you!
 3. Add a new checkbox under section 2: `RoHS Environmental Compliance`.
 4. Refresh and verify it toggles properly.
+
+<details>
+<summary>🔍 Reveal Practical Challenge Solution Code</summary>
+
+```html
+<!-- Inside fieldset 2: -->
+<label>
+  <input type="checkbox" name="certs" value="RoHS-Compliant"> RoHS 2011/65/EU Heavy Metal Directive
+</label><br>
+```
+</details>

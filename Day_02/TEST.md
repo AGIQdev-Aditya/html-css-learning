@@ -6,16 +6,16 @@ Rules: Try to answer in your head before clicking **Reveal Answer**.
 ---
 
 ### Question 1 (College Exam Classic — File Paths)
-**You are inside `Day_02/index.html`. You have an image located at `assets/logo.png` in the parent directory (`HTML Learning/assets/logo.png`). What is the correct relative path to put in `<img src="...">`?**
+**You are inside `Day_02/index.html`. You have an image located at `assets/circuit_specimen.svg` in the parent directory (`HTML Learning/assets/circuit_specimen.svg`). What is the correct relative path to put in `<img src="...">`?**
 
 <details>
 <summary>🔍 Reveal Answer</summary>
 
 **Answer:**  
-`../assets/logo.png`  
+`../assets/circuit_specimen.svg`  
 - `..` moves you UP one folder from `Day_02/` into `HTML Learning/`.
-- `/assets/logo.png` enters the `assets` folder and points to `logo.png`.
-- *Common student mistake:* Writing `/assets/logo.png` (points to system root) or `./assets/logo.png` (looks inside `Day_02/assets/` which doesn't exist).
+- `/assets/circuit_specimen.svg` enters the `assets` folder and points to `circuit_specimen.svg`.
+- *Common student mistake:* Writing `/assets/...` (points to your Linux root `/`) or `./assets/...` (looks inside `Day_02/assets/` which does not exist).
 </details>
 
 ---
@@ -46,7 +46,18 @@ Modern browsers have strict **Autoplay Policies** to protect user experience. Au
 ---
 
 ### 🛠️ Practical Challenge (5 Minutes)
-1. Open `Day_02/index.html` in VS Code or your editor.
-2. In Exercise 2, click the circuit board image in your browser — ensure it opens the Unsplash webpage in a new tab without closing your own page!
-3. In Exercise 4, test clicking the email link — does it open your default mail client with `aditya@nexcan.ai` pre-filled?
-4. When finished, check off Day 02 in `README.md`!
+1. Open `Day_02/index.html` in your browser.
+2. In Exercise 1, click the SVG circuit board image — ensure it navigates to `./specimen_report.html` locally without needing internet!
+3. Inside `specimen_report.html`, click the back link to return to `Day_02/index.html`.
+4. Now add an anchor link in `Day_02/index.html` that jumps directly to `Day_01/index.html` using a relative path.
+
+<details>
+<summary>🔍 Reveal Practical Challenge Solution Code</summary>
+
+```html
+<!-- Relative path to climb up from Day_02 and enter Day_01: -->
+<p>
+  <a href="../Day_01/index.html">&larr; Return to Day 01 Lesson</a>
+</p>
+```
+</details>

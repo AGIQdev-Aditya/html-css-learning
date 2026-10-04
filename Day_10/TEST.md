@@ -31,7 +31,7 @@ You forgot the **Viewport Meta Tag** in the `<head>`:
 ```html
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 ```  
-Without this tag, mobile mobile browsers assume a desktop viewport of 980px, zoom out, and fail to report actual device CSS pixel widths!
+Without this tag, mobile browsers assume a desktop viewport of 980px, zoom out, and fail to report actual device CSS pixel widths!
 </details>
 
 ---
@@ -57,3 +57,18 @@ Without this tag, mobile mobile browsers assume a desktop viewport of 980px, zoo
    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
    ```
 4. Resize your window slowly and observe how each card dynamically reorganizes itself smoothly at any screen width!
+
+<details>
+<summary>🔍 Reveal Practical Challenge Explanation</summary>
+
+```css
+/* In Day_10/style.css: */
+.metrics-grid {
+  display: grid;
+  /* Auto-fits as many 240px columns as fit on screen, zero media queries needed! */
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 20px;
+  margin-bottom: 32px;
+}
+```
+</details>

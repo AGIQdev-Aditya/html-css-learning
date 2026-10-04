@@ -63,3 +63,17 @@ The button will transition smoothly to red upon hovering, **but will instantly s
    transform: translateY(-8px) scale(1.02);
    ```
 4. Hover over the cards and see how responsive and physical the UI feels!
+
+<details>
+<summary>🔍 Reveal Practical Challenge Explanation</summary>
+
+```css
+/* In Day_11/style.css: */
+.interactive-card:hover {
+  /* Floats up 8px AND gently scales up by 2% on the GPU compositor */
+  transform: translateY(-8px) scale(1.02);
+  border-color: #3b4256;
+  box-shadow: 0 16px 32px -4px rgba(0, 0, 0, 0.7);
+}
+```
+</details>

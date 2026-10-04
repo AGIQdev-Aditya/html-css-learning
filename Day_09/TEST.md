@@ -52,3 +52,29 @@ It expands to:
 2. In `Day_09/style.css`, locate `.flex-navbar`.
 3. Temporarily change `justify-content: space-between;` to `justify-content: space-around;` and refresh. Notice how brand and CTA now have margins on the extreme edges. Change it to `justify-content: space-evenly;` to see perfectly balanced mathematical spacing.
 4. Add 2 more `<div class="flex-card">` items in `Day_09/index.html` under Section 3. Resize your browser window and watch how cleanly Flexbox reorganizes them into neat rows!
+
+<details>
+<summary>🔍 Reveal Practical Challenge Solution Code</summary>
+
+```css
+/* In Day_09/style.css line 17: */
+.flex-navbar {
+  display: flex;
+  justify-content: space-evenly; /* Try space-between, space-around, and space-evenly */
+  align-items: center;
+}
+```
+```html
+<!-- Additional cards in Day_09/index.html under .flex-cards-container: -->
+<div class="flex-card">
+  <h4>Module E: Thermal Dissipation</h4>
+  <p>Inverter heat-sink thermocouple telemetry.</p>
+  <span class="chip">Online</span>
+</div>
+<div class="flex-card">
+  <h4>Module F: Throttle Position</h4>
+  <p>Dual Hall-effect sensor angular voltage check.</p>
+  <span class="chip">Online</span>
+</div>
+```
+</details>

@@ -62,3 +62,27 @@ Its values range from `0.0` (100% fully transparent / invisible) to `1.0` (100% 
 2. In `Day_06/style.css`, create a third badge class: `.badge-amber` with an orange-gold background (`rgba(217, 119, 6, 0.15)`) and text color `#D97706`.
 3. Add a third card to `Day_06/index.html` using your new `.badge-amber`!
 4. Refresh and observe how clean modern CSS classes make styling effortless!
+
+<details>
+<summary>🔍 Reveal Practical Challenge Solution Code</summary>
+
+```css
+/* Inside Day_06/style.css: */
+.badge-amber {
+  background-color: rgba(217, 119, 6, 0.15);
+  color: #D97706;
+  border: 1px solid rgba(217, 119, 6, 0.3);
+}
+```
+```html
+<!-- Inside Day_06/index.html under .card-grid: -->
+<article class="card">
+  <span class="badge badge-amber">REWORK REQUIRED</span>
+  <h2 class="card-title">CAN-Bus Gateway Module</h2>
+  <p class="card-text">
+    Termination resistor mismatch detected (measured 120Ω instead of 60Ω bus total).
+  </p>
+  <button class="btn btn-secondary">Recalibrate &rarr;</button>
+</article>
+```
+</details>

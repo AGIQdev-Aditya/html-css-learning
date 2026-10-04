@@ -2,16 +2,92 @@
 <html lang="en">
 
 <head>
+  <!-- Metadata: Invisible to user, critical for browser and search engines -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Aditya — Day 01 HTML</title>
+  <title>Day 01 — Skeleton & Text Hierarchy | Aditya</title>
 </head>
 
 <body>
-  <!-- Day 01: Write your headings, paragraphs, and formatting here! -->
-  <h1>Aditya Agnihotri — Web Engineering Day 01</h1>
+
+  <!-- ================================================================
+       EXERCISE 1: DOCUMENT SKELETON & PRIMARY HEADING
+       Rule: Only ONE <h1> tag per HTML document for valid SEO and a11y!
+       ================================================================ -->
+  <header>
+    <h1>Aditya Agnihotri — Web Engineering Laboratory</h1>
+    <p>1st Year Undergraduate // NIAT — Ajeenkya DY Patil University (ADYPU), Pune</p>
+  </header>
+
   <hr>
-  <p><em>Welcome</em> to my first web page built on <strong>Omarchy Linux</strong>.</p>
+
+  <!-- ================================================================
+       EXERCISE 2: HEADING HIERARCHY (<h1> down to <h6>)
+       Task: Observe how heading tags establish visual and semantic hierarchy.
+       ================================================================ -->
+  <section>
+    <h2>1. Optical Inspection Heading Scale</h2>
+    <h3>Level 3: Telecentric Lens Substation</h3>
+    <h4>Level 4: Micron Calibration Register</h4>
+    <h5>Level 5: Raw Sensor Frame Buffer</h5>
+    <h6>Level 6: Diagnostic Memory Hex Dump</h6>
+  </section>
+
+  <hr>
+
+  <!-- ================================================================
+       EXERCISE 3: PARAGRAPHS & LINE BREAKS (<p> vs <br>)
+       Task: Notice how <p> creates automatic top/bottom margins,
+             while <br> forces a line wrap without creating a new block.
+       ================================================================ -->
+  <section>
+    <h2>2. Telemetry Dispatch Log</h2>
+    <p>
+      Station Unit: <strong>CV-UNIT-01</strong><br>
+      Host Platform: <strong>Omarchy Linux (x86_64)</strong><br>
+      Status: <em>Nominal Execution Active</em>
+    </p>
+
+    <p>
+      This is a distinct second paragraph. Notice the empty vertical space 
+      automatically created between this block and the dispatch log above!
+    </p>
+  </section>
+
+  <hr>
+
+  <!-- ================================================================
+       EXERCISE 4: SEMANTIC FORMATTING vs VISUAL STYLING (EXAM FAVORITE)
+       Task: Compare presentational tags with meaningful semantic tags.
+       ================================================================ -->
+  <section>
+    <h2>3. Semantic Quality Markup</h2>
+    <p>
+      Batch #2026-A1 initially showed a 
+      <del>micro-crack defect</del> <ins>verified zero-defect baseline</ins>.
+    </p>
+    <p>
+      <strong>CRITICAL WARNING:</strong> Always verify ground plane clearance 
+      before applying high-voltage bias!
+    </p>
+    <p>
+      The CAN-Bus bit timing register was set to <mark>500 kbps</mark> for testing.
+    </p>
+    <p>
+      To view real-time logs in terminal, execute the command: <code>candump can0</code>
+    </p>
+  </section>
+
+  <hr>
+
+  <!-- ================================================================
+       EXERCISE 5: SELF-CLOSING / VOID TAGS
+       Void elements have no content and no closing tags (e.g. <hr>, <br>).
+       ================================================================ -->
+  <footer>
+    <p>Completed on Linux Workstation • All rights reserved &copy; 2026 Aditya Agnihotri</p>
+  </footer>
+
 </body>
 
 </html>

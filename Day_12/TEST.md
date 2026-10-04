@@ -45,4 +45,18 @@ The `<h1>` tag communicates the single overarching theme and purpose of the enti
 ### 🛠️ Practical Challenge (5 Minutes)
 1. Open `Day_12/index.html` in your browser. Notice how cleanly readable and organized the page is even without CSS!
 2. Open Chrome/Chromium DevTools (`F12`), switch to the **Lighthouse** tab, and run an **Accessibility & SEO Audit**.
-3. Notice how semantic tags, properly labeled forms, and heading hierarchies score nearly 100% out of the box!
+3. Add a fourth course row to the academic table for Engineering Physics / Mathematics.
+
+<details>
+<summary>🔍 Reveal Practical Challenge Solution Code</summary>
+
+```html
+<!-- Inside <tbody> in Day_12/index.html: -->
+<tr>
+  <td><code>MA-101</code></td>
+  <td>Engineering Mathematics I</td>
+  <td>Calculus, linear algebra, and discrete matrix methods</td>
+  <td>Active Core</td>
+</tr>
+```
+</details>
