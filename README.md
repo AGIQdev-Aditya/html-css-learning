@@ -44,7 +44,7 @@ Each daily lesson is strictly timed to respect your college study schedule:
 
 ## 📁 Repository Directory Map
 ```text
-HTML Learning/
+HTML & CSS Learning/
 ├── README.md               # Master curriculum & progress tracking
 ├── OFFLINE_CHEAT_SHEET.md  # 📘 100% Offline Master Reference & Viva Guide
 ├── assets/                 # Offline vector schematics & media
@@ -75,6 +75,6 @@ HTML Learning/
 ---
 
 ## ⚡ How to Run & View Your Work
-1. In VS Code or file explorer, navigate to `/home/luca/Workspace/HTML Learning`.
+1. In VS Code or file explorer, navigate to `/home/luca/Workspace/HTML & CSS Learning`.
 2. Right click any `index.html` → **Open with Live Server** (or open the file directly in Chromium).
 3. Open Developer Tools (`Ctrl + Shift + I` or `F12`) to inspect elements, experiment with styles, and observe the box model and grid overlays live!
