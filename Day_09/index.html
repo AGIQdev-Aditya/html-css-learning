@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Day 09 — Modern CSS Flexbox Mastery</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- 1. FLEX NAVBAR (space-between + align-items: center) -->
+  <nav class="flex-navbar">
+    <div class="brand">
+      <span class="brand-code">FLEX_CORE //</span>
+      <span class="brand-name"> Pune Engineering Hub</span>
+    </div>
+    <ul class="nav-links">
+      <li><a href="#centering" class="nav-item">Centering</a></li>
+      <li><a href="#search-bar" class="nav-item">Flex Grow</a></li>
+      <li><a href="#card-wrap" class="nav-item">Flex Wrap</a></li>
+    </ul>
+    <div class="nav-cta">
+      <button class="btn-primary">Connect ADYPU</button>
+    </div>
+  </nav>
+
+  <main class="page-container">
+
+    <!-- 2. THE LEGENDARY CENTERING LAB -->
+    <section id="centering" class="lab-card">
+      <h2 class="lab-title">01. The Perfect Div Centering Stage</h2>
+      <p class="lab-subtitle">Solved using only <code>display: flex</code>, <code>justify-content: center</code>, and <code>align-items: center</code>.</p>
+      
+      <div class="centering-stage">
+        <div class="centered-box">
+          <span class="badge">PERFECT CENTER</span>
+          <h3>50% X / 50% Y</h3>
+          <p>Zero math. Pure flexbox alignment.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. FLEX GROW IN ACTION: DYNAMIC SEARCH BAR -->
+    <section id="search-bar" class="lab-card">
+      <h2 class="lab-title">02. Dynamic Space Allocation with <code>flex-grow: 1</code></h2>
+      <p class="lab-subtitle">The input grows to take up 100% of remaining width while the button stays rigid.</p>
+
+      <div class="flex-search-group">
+        <span class="search-icon">🔍</span>
+        <input type="text" class="search-input" placeholder="Search vehicle diagnostics, parts or students...">
+        <button class="btn-search">Search Database</button>
+      </div>
+    </section>
+
+    <!-- 4. FLEX WRAP & GAP LAB -->
+    <section id="card-wrap" class="lab-card">
+      <h2 class="lab-title">03. Responsive Wrapping with <code>flex-wrap: wrap</code> & <code>gap: 20px</code></h2>
+      <p class="lab-subtitle">Resize your browser window — cards wrap naturally without any CSS floats or calculations.</p>
+
+      <div class="flex-cards-container">
+        <div class="flex-card">
+          <h4>Module A: Powertrain</h4>
+          <p>CAN-Bus speed sensor stream calibration.</p>
+          <span class="chip">Online</span>
+        </div>
+        <div class="flex-card">
+          <h4>Module B: Telemetry</h4>
+          <p>LoRa GPS node at 868MHz packet rate.</p>
+          <span class="chip">Online</span>
+        </div>
+        <div class="flex-card">
+          <h4>Module C: Battery State</h4>
+          <p>12V AGM terminal voltage monitoring.</p>
+          <span class="chip">Standby</span>
+        </div>
+        <div class="flex-card">
+          <h4>Module D: Braking System</h4>
+          <p>Hydraulic line pressure sensor check.</p>
+          <span class="chip">Online</span>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+</body>
+</html>

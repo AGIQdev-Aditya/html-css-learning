@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Day 07 — The Box Model Laboratory | Aditya</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <main class="container">
+    <h1>The CSS Box Model Laboratory</h1>
+    <p class="desc">
+      Inspect the visual difference between <code>content-box</code> and <code>border-box</code>.
+    </p>
+
+    <!-- SIDE-BY-SIDE BOX COMPARISON -->
+    <div class="comparison-grid">
+
+      <!-- BOX 1: Legacy content-box (Inflates beyond declared width!) -->
+      <div class="box-card content-box-card">
+        <h3>1. Legacy Content-Box</h3>
+        <p>Declared: <code>width: 280px</code></p>
+        <p>Padding: <code>30px</code>, Border: <code>6px</code></p>
+        <div class="badge badge-warning">Actual: 352px Total!</div>
+      </div>
+
+      <!-- BOX 2: Modern border-box (Maintains exact declared width!) -->
+      <div class="box-card border-box-card">
+        <h3>2. Modern Border-Box</h3>
+        <p>Declared: <code>width: 280px</code></p>
+        <p>Padding: <code>30px</code>, Border: <code>6px</code></p>
+        <div class="badge badge-success">Actual: 280px Exact!</div>
+      </div>
+
+    </div>
+
+    <!-- MARGIN COLLAPSING DEMO -->
+    <section class="margin-demo-section">
+      <h2>Vertical Margin Collapsing</h2>
+      <div class="collapsing-box box-a">
+        Box A (margin-bottom: 40px)
+      </div>
+      <div class="collapsing-box box-b">
+        Box B (margin-top: 25px)
+      </div>
+      <p class="collapsing-note">
+        Total gap is <strong>40px</strong> (the larger margin), NOT 65px!
+      </p>
+    </section>
+
+  </main>
+
+</body>
+
+</html>

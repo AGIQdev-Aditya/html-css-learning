@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Day 11 — Visual Polish & Micro-Interactions Showcase</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="header">
+    <div class="header-inner">
+      <span class="badge-pill">UI MICRO-INTERACTIONS LAB</span>
+      <h1>Tactile Physics & Visual Craft</h1>
+      <p>Hover and click the components below to observe 60fps GPU-accelerated micro-interactions.</p>
+    </div>
+  </header>
+
+  <main class="page-container">
+
+    <!-- 1. INTERACTIVE BUTTON GALLERY -->
+    <section class="section">
+      <h2 class="section-title">01. Tactile Button Physics</h2>
+      <p class="section-desc">Observe the smooth transition, hover elevation, and click press states.</p>
+
+      <div class="button-row">
+        <button class="btn btn-primary">Primary Action</button>
+        <button class="btn btn-glow">Glowing Accent</button>
+        <button class="btn btn-outline">Ghost Outline</button>
+        <button class="btn-pill">Pill Tag Button</button>
+      </div>
+    </section>
+
+    <!-- 2. ELEVATING CARDS -->
+    <section class="section">
+      <h2 class="section-title">02. 3D Elevation Cards</h2>
+      <p class="section-desc">Cards float up using <code>transform: translateY(-8px)</code> with realistic shadow dispersion.</p>
+
+      <div class="card-grid">
+        <article class="interactive-card">
+          <div class="card-icon">⚡</div>
+          <h3>CAN-Bus High-Speed Buffer</h3>
+          <p>Real-time frame parser with zero dropped packets under high load.</p>
+          <div class="card-action">Explore Node →</div>
+        </article>
+
+        <article class="interactive-card">
+          <div class="card-icon">🛡️</div>
+          <h3>ECU Security Gateway</h3>
+          <p>Hardware-level seed-key authentication for onboard vehicle diagnostics.</p>
+          <div class="card-action">Explore Node →</div>
+        </article>
+
+        <article class="interactive-card">
+          <div class="card-icon">📊</div>
+          <h3>Telemetry Logger</h3>
+          <p>Sub-millisecond data logging to local flash storage with CRC verification.</p>
+          <div class="card-action">Explore Node →</div>
+        </article>
+      </div>
+    </section>
+
+    <!-- 3. GLASSMORPHISM PANEL -->
+    <section class="section">
+      <h2 class="section-title">03. Modern Glassmorphism Card</h2>
+      <p class="section-desc">Translucent background combined with <code>backdrop-filter: blur()</code>.</p>
+
+      <div class="glass-container">
+        <div class="glass-card">
+          <h4>Glass Surface Layer</h4>
+          <p>This panel uses <code>background: rgba(255, 255, 255, 0.04)</code> and <code>backdrop-filter: blur(16px)</code> with a 1px frosted translucent border.</p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+</body>
+</html>

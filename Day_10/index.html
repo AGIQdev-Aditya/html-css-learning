@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Day 10 — CSS Grid & Responsive Telemetry Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- TOP HEADER -->
+  <header class="dashboard-header">
+    <div class="header-inner">
+      <div>
+        <h1 class="header-title">VEHICLE_CAN_TELEMETRY // PUNE LAB</h1>
+        <p class="header-sub">ADYPU Dynamic Diagnostic Matrix</p>
+      </div>
+      <div class="breakpoint-badge">
+        <span class="desktop-indicator">DESKTOP VIEW (>768px)</span>
+        <span class="mobile-indicator">MOBILE VIEW (≤768px)</span>
+      </div>
+    </div>
+  </header>
+
+  <main class="dashboard-main">
+
+    <!-- 2D CSS GRID SYSTEM -->
+    <div class="metrics-grid">
+      
+      <!-- FEATURED CARD (SPANS 2 COLUMNS ON DESKTOP) -->
+      <article class="grid-card card-featured">
+        <div class="card-head">
+          <span class="chip chip-gold">MASTER NODE</span>
+          <span class="timestamp">12ms Ping</span>
+        </div>
+        <h2 class="featured-metric">1,248 RPM</h2>
+        <p class="featured-label">Engine Idle Telemetry — Cylinder Pressure Nominal</p>
+        <div class="status-bar">
+          <div class="status-fill" style="width: 78%;"></div>
+        </div>
+      </article>
+
+      <!-- METRIC CARD 1 -->
+      <article class="grid-card">
+        <span class="chip chip-green">VOLTAGE</span>
+        <h3 class="metric-val">13.8 V</h3>
+        <p class="metric-desc">Alternator output charge</p>
+      </article>
+
+      <!-- METRIC CARD 2 -->
+      <article class="grid-card">
+        <span class="chip chip-blue">TEMP</span>
+        <h3 class="metric-val">84 °C</h3>
+        <p class="metric-desc">Coolant radiator loop</p>
+      </article>
+
+      <!-- METRIC CARD 3 -->
+      <article class="grid-card">
+        <span class="chip chip-green">O2 SENSOR</span>
+        <h3 class="metric-val">0.98 λ</h3>
+        <p class="metric-desc">Stoichiometric burn ratio</p>
+      </article>
+
+      <!-- METRIC CARD 4 -->
+      <article class="grid-card">
+        <span class="chip chip-purple">CAN SPEED</span>
+        <h3 class="metric-val">500 kbps</h3>
+        <p class="metric-desc">High-speed twisted pair bus</p>
+      </article>
+
+    </div>
+
+    <!-- RESPONSIVE DEMO INSTRUCTIONS -->
+    <section class="instructions-banner">
+      <h3>💡 Try This Right Now:</h3>
+      <p>Press <code>F12</code> or right-click → <strong>Inspect</strong>. Toggle device toolbar (<code>Ctrl + Shift + M</code>) or drag your browser window edge to below 768px. Watch how the 2-column featured card cleanly stacks into a mobile layout!</p>
+    </section>
+
+  </main>
+
+</body>
+</html>

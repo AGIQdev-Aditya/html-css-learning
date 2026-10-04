@@ -1,0 +1,264 @@
+/* CSS RESET */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  background-color: #0c0d0e;
+  color: #e6e8eb;
+  line-height: 1.6;
+  padding-bottom: 60px;
+}
+
+/* 1. STICKY NAVIGATION */
+.sticky-nav {
+  position: sticky;
+  top: 0;
+  z-index: 100; /* Stays above all scrolling content */
+  background: rgba(18, 20, 23, 0.85);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid #23272f;
+}
+
+.nav-content {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 14px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-family: "JetBrains Mono", monospace;
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: #c9b59c;
+  letter-spacing: 0.08em;
+}
+
+.status-indicator {
+  font-size: 0.75rem;
+  color: #10b981;
+  font-family: "JetBrains Mono", monospace;
+}
+
+/* CONTAINER */
+.page-container {
+  max-width: 960px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+.lab-section {
+  background: #14171a;
+  border: 1px solid #23272f;
+  border-radius: 8px;
+  padding: 24px;
+  margin-bottom: 32px;
+}
+
+.section-title {
+  font-size: 1.25rem;
+  color: #ffffff;
+  margin-bottom: 6px;
+}
+
+.section-desc {
+  font-size: 0.9rem;
+  color: #8b949e;
+  margin-bottom: 20px;
+}
+
+/* 01. DISPLAY MODES DEMO */
+.display-demo {
+  background: #0f1115;
+  padding: 20px;
+  border-radius: 6px;
+  border: 1px dashed #30363d;
+}
+
+.demo-inline {
+  display: inline;
+  background: #3b82f6;
+  color: #fff;
+  padding: 8px 12px;
+  margin: 4px;
+  font-size: 0.85rem;
+  border-radius: 4px;
+}
+
+.demo-block {
+  display: block;
+  background: #ef4444;
+  color: #fff;
+  padding: 12px 16px;
+  margin: 16px 0;
+  font-size: 0.85rem;
+  font-weight: 600;
+  border-radius: 4px;
+}
+
+.demo-inline-block {
+  display: inline-block;
+  background: #10b981;
+  color: #fff;
+  width: 280px; /* INLINE-BLOCK RESPECTS WIDTH! INLINE CANNOT! */
+  padding: 12px 16px;
+  margin: 6px 4px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  border-radius: 4px;
+}
+
+/* 02. RELATIVE + ABSOLUTE CARDS */
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  position: relative; /* REQUIRED: Anchor for the absolute badge! */
+  background: #181b20;
+  border: 1px solid #2a2f3a;
+  border-radius: 8px;
+  padding: 24px;
+  overflow: hidden;
+}
+
+.badge {
+  position: absolute; /* Pinned relative to .card */
+  top: 14px;
+  right: 14px;
+  font-size: 0.7rem;
+  font-weight: 700;
+  padding: 4px 8px;
+  border-radius: 4px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.badge-pulse {
+  background: rgba(239, 68, 68, 0.2);
+  color: #f87171;
+  border: 1px solid rgba(239, 68, 68, 0.4);
+}
+
+.badge-neutral {
+  background: rgba(16, 185, 129, 0.2);
+  color: #34d399;
+  border: 1px solid rgba(16, 185, 129, 0.4);
+}
+
+.card-title {
+  font-size: 1.1rem;
+  color: #f3f4f6;
+  margin-top: 12px;
+  margin-bottom: 8px;
+}
+
+.card-meta {
+  font-size: 0.85rem;
+  color: #9ca3af;
+  margin-bottom: 20px;
+}
+
+.card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.price {
+  font-family: "JetBrains Mono", monospace;
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #c9b59c;
+}
+
+.btn {
+  background: #23272f;
+  color: #e6e8eb;
+  border: 1px solid #3b4252;
+  padding: 6px 14px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.85rem;
+}
+
+/* 03. Z-INDEX LAB */
+.stack-container {
+  position: relative;
+  height: 180px;
+  background: #0f1115;
+  border-radius: 6px;
+  border: 1px dashed #30363d;
+  margin-top: 16px;
+}
+
+.stack-box {
+  position: absolute;
+  width: 180px;
+  height: 90px;
+  padding: 12px;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 0.85rem;
+}
+
+.box-1 {
+  background: rgba(59, 130, 246, 0.85); /* Blue */
+  top: 20px;
+  left: 20px;
+  z-index: 1; /* Back layer */
+}
+
+.box-2 {
+  background: rgba(245, 158, 11, 0.85); /* Orange */
+  top: 45px;
+  left: 80px;
+  z-index: 5; /* Middle layer */
+}
+
+.box-3 {
+  background: rgba(16, 185, 129, 0.9); /* Green */
+  top: 70px;
+  left: 140px;
+  z-index: 10; /* Front layer (overlaps all) */
+}
+
+/* 04. SCROLL SPACER */
+.scroll-spacer {
+  height: 600px;
+  padding: 40px;
+  text-align: center;
+  color: #6b7280;
+  border: 1px dashed #23272f;
+  border-radius: 8px;
+  margin-top: 20px;
+}
+
+/* 05. FIXED FLOATING ACTION BUTTON (FAB) */
+.floating-action {
+  position: fixed; /* Glued to screen regardless of scrolling */
+  bottom: 24px;
+  right: 24px;
+  z-index: 999;
+}
+
+.fab-btn {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background: #c9b59c;
+  color: #0c0d0e;
+  border: none;
+  font-size: 1.4rem;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.6);
+}

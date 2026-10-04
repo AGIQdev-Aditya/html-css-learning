@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Day 05 — Semantic Architecture Blueprint | Aditya</title>
+</head>
+
+<body>
+
+  <!-- ================================================================
+       1. SEMANTIC HEADER & PRIMARY NAVIGATION
+       ================================================================ -->
+  <header>
+    <h1>NEXCAN AI — Systems Engineering Portal</h1>
+    <p>Autonomous Telecentric Vision & Quality Assurance</p>
+    <nav>
+      <ul>
+        <li><a href="#overview">Overview</a></li>
+        <li><a href="#specimens">Specimens</a></li>
+        <li><a href="#telemetry">Telemetry</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <hr>
+
+  <!-- ================================================================
+       2. PRIMARY DOCUMENT CONTENT (<main>)
+       Rule: Only ONE <main> element allowed per HTML document!
+       ================================================================ -->
+  <main>
+
+    <!-- SECTION: Thematic grouping of features -->
+    <section id="overview">
+      <h2>1. Platform Overview</h2>
+      <p>
+        NexcanAI provides sub-millimeter inspection using 
+        <span>Gemini 3.8 Flash</span> computer vision.
+      </p>
+    </section>
+
+    <!-- SECTION: Contains self-contained <article> cards -->
+    <section id="specimens">
+      <h2>2. Certified Inspection Reports</h2>
+
+      <!-- ARTICLE 1: Standalone report card -->
+      <article>
+        <h3>Batch #2026-A1: QFP-48 Lead Pitch</h3>
+        <p><strong>Status:</strong> SCRAP (Solder Bridge Detected)</p>
+        <p>Short-circuit detected between pin 14 and pin 15 with 0.42mm bridge width.</p>
+        <small>Logged: October 4, 2026 by Lead Inspector</small>
+      </article>
+
+      <br>
+
+      <!-- ARTICLE 2: Standalone report card -->
+      <article>
+        <h3>Batch #2026-A2: 300mm Silicon Wafer</h3>
+        <p><strong>Status:</strong> PASS (Zero Anomalies)</p>
+        <p>All concentric gold conductive traces verified within 0.05mm tolerance limits.</p>
+        <small>Logged: October 4, 2026 by Vision Engine</small>
+      </article>
+    </section>
+
+    <br>
+
+    <!-- ASIDE: Secondary / Tangential Sidebar Content -->
+    <aside id="telemetry">
+      <h3>Station Telemetry & Regulatory Compliance</h3>
+      <p>
+        Plant Station: <code>CV-UNIT-01</code> | 
+        Standard: <code>ISO-9001:2015 Clause 8.5.1</code>
+      </p>
+    </aside>
+
+  </main>
+
+  <hr>
+
+  <!-- ================================================================
+       3. DOCUMENT FOOTER
+       ================================================================ -->
+  <footer>
+    <p>&copy; 2026 Team Nexus Four • Aditya Agnihotri • ADYPU Pune</p>
+    <p><a href="#">Privacy Policy</a> | <a href="#">Terms of Engineering Service</a></p>
+  </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,244 @@
+/* UNIVERSAL RESET */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  background-color: #0a0b0d;
+  color: #e6e8eb;
+  line-height: 1.6;
+  padding-bottom: 60px;
+}
+
+/* HEADER */
+.header {
+  background: radial-gradient(circle at 50% 0%, #1a1e26 0%, #0a0b0d 75%);
+  padding: 60px 20px 40px;
+  text-align: center;
+  border-bottom: 1px solid #1a1d24;
+}
+
+.header-inner {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.badge-pill {
+  display: inline-block;
+  font-family: "JetBrains Mono", monospace;
+  font-size: 0.75rem;
+  letter-spacing: 0.08em;
+  padding: 6px 14px;
+  border-radius: 9999px;
+  background: rgba(201, 181, 156, 0.12);
+  color: #c9b59c;
+  border: 1px solid rgba(201, 181, 156, 0.25);
+  margin-bottom: 16px;
+}
+
+.header h1 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 12px;
+}
+
+.header p {
+  font-size: 1rem;
+  color: #8b949e;
+}
+
+/* CONTAINER */
+.page-container {
+  max-width: 960px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+.section {
+  background: #11141a;
+  border: 1px solid #1f242e;
+  border-radius: 12px;
+  padding: 28px;
+  margin-bottom: 32px;
+}
+
+.section-title {
+  font-size: 1.25rem;
+  color: #ffffff;
+  margin-bottom: 4px;
+}
+
+.section-desc {
+  font-size: 0.85rem;
+  color: #8b949e;
+  margin-bottom: 24px;
+}
+
+/* ========================================================
+   01. BUTTON TACTILE PHYSICS
+   ======================================================== */
+.button-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  align-items: center;
+}
+
+.btn {
+  font-family: inherit;
+  font-size: 0.9rem;
+  font-weight: 600;
+  padding: 10px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  /* CRITICAL: Smooth 60fps transitions on base class */
+  transition: transform 0.15s ease, box-shadow 0.15s ease, background-color 0.15s ease;
+}
+
+.btn-primary {
+  background: #c9b59c;
+  color: #0c0d0e;
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(201, 181, 156, 0.35);
+}
+
+.btn-primary:active {
+  transform: translateY(0) scale(0.98);
+}
+
+.btn-glow {
+  background: #2563eb;
+  color: #ffffff;
+}
+
+.btn-glow:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 0 20px rgba(37, 99, 235, 0.6);
+}
+
+.btn-glow:active {
+  transform: translateY(0);
+}
+
+.btn-outline {
+  background: transparent;
+  color: #e5e7eb;
+  border: 1px solid #374151;
+}
+
+.btn-outline:hover {
+  background: #1f2937;
+  border-color: #4b5563;
+  transform: translateY(-2px);
+}
+
+.btn-pill {
+  font-family: inherit;
+  font-size: 0.85rem;
+  font-weight: 600;
+  padding: 8px 18px;
+  border-radius: 9999px;
+  background: #1f242e;
+  color: #9ca3af;
+  border: 1px solid #2e3543;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.btn-pill:hover {
+  color: #ffffff;
+  border-color: #c9b59c;
+}
+
+/* ========================================================
+   02. ELEVATING CARDS
+   ======================================================== */
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+}
+
+.interactive-card {
+  background: #151821;
+  border: 1px solid #222735;
+  border-radius: 10px;
+  padding: 24px;
+  cursor: pointer;
+  /* 60 FPS GPU-ACCELERATED PHYSICS TRANSITION */
+  transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1), 
+              box-shadow 0.25s ease, 
+              border-color 0.25s ease;
+}
+
+.interactive-card:hover {
+  transform: translateY(-8px); /* Card floats up */
+  border-color: #3b4256;
+  box-shadow: 0 16px 32px -4px rgba(0, 0, 0, 0.7); /* Deep realistic shadow */
+}
+
+.card-icon {
+  font-size: 1.8rem;
+  margin-bottom: 12px;
+}
+
+.interactive-card h3 {
+  font-size: 1.1rem;
+  color: #f3f4f6;
+  margin-bottom: 8px;
+}
+
+.interactive-card p {
+  font-size: 0.85rem;
+  color: #9ca3af;
+  margin-bottom: 16px;
+}
+
+.card-action {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #c9b59c;
+  transition: transform 0.2s ease;
+}
+
+.interactive-card:hover .card-action {
+  transform: translateX(4px);
+}
+
+/* ========================================================
+   03. GLASSMORPHISM PANEL
+   ======================================================== */
+.glass-container {
+  padding: 40px;
+  border-radius: 8px;
+  background: radial-gradient(circle at 100% 100%, rgba(37, 99, 235, 0.25), transparent 60%);
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 10px;
+  padding: 24px;
+}
+
+.glass-card h4 {
+  font-size: 1.1rem;
+  color: #ffffff;
+  margin-bottom: 8px;
+}
+
+.glass-card p {
+  font-size: 0.85rem;
+  color: #c9b59c;
+}

@@ -1,0 +1,211 @@
+/* UNIVERSAL RESET */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  background-color: #0b0c0e;
+  color: #e5e7eb;
+  line-height: 1.6;
+}
+
+/* 1. FLEX NAVBAR */
+.flex-navbar {
+  display: flex; /* Flex container */
+  justify-content: space-between; /* Space out brand, links, and CTA */
+  align-items: center; /* Center items on the vertical cross-axis */
+  background: #111418;
+  padding: 16px 28px;
+  border-bottom: 1px solid #1f242d;
+  position: sticky;
+  top: 0;
+  z-index: 50;
+}
+
+.brand-code {
+  font-family: "JetBrains Mono", monospace;
+  font-weight: 700;
+  color: #c9b59c;
+}
+
+.brand-name {
+  color: #9ca3af;
+  font-size: 0.9rem;
+}
+
+.nav-links {
+  display: flex; /* Turn the list into a horizontal flex row! */
+  gap: 24px;      /* Modern gap between links */
+  list-style: none;
+}
+
+.nav-item {
+  color: #9ca3af;
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: color 0.15s ease;
+}
+
+.nav-item:hover {
+  color: #ffffff;
+}
+
+.btn-primary {
+  background: #c9b59c;
+  color: #0c0d0e;
+  font-weight: 600;
+  padding: 8px 16px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+}
+
+/* PAGE CONTAINER */
+.page-container {
+  max-width: 1000px;
+  margin: 36px auto;
+  padding: 0 20px;
+}
+
+.lab-card {
+  background: #14171d;
+  border: 1px solid #1f242d;
+  border-radius: 8px;
+  padding: 24px;
+  margin-bottom: 32px;
+}
+
+.lab-title {
+  font-size: 1.25rem;
+  color: #ffffff;
+  margin-bottom: 6px;
+}
+
+.lab-subtitle {
+  font-size: 0.85rem;
+  color: #9ca3af;
+  margin-bottom: 20px;
+}
+
+/* 2. CENTERING STAGE */
+.centering-stage {
+  display: flex;
+  justify-content: center; /* Main axis center */
+  align-items: center;     /* Cross axis center */
+  height: 240px;
+  background: #0d0f12;
+  border: 1px dashed #2a313d;
+  border-radius: 6px;
+}
+
+.centered-box {
+  background: #1b2028;
+  border: 1px solid #c9b59c;
+  padding: 24px 32px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.centered-box .badge {
+  display: inline-block;
+  background: rgba(201, 181, 156, 0.15);
+  color: #c9b59c;
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 4px 10px;
+  border-radius: 4px;
+  margin-bottom: 8px;
+  font-family: "JetBrains Mono", monospace;
+}
+
+.centered-box h3 {
+  font-size: 1.3rem;
+  color: #f3f4f6;
+  margin-bottom: 4px;
+}
+
+.centered-box p {
+  font-size: 0.85rem;
+  color: #8b949e;
+}
+
+/* 3. FLEX GROW SEARCH BAR */
+.flex-search-group {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: #0d0f12;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #232a35;
+}
+
+.search-icon {
+  font-size: 1.1rem;
+  padding-left: 8px;
+}
+
+.search-input {
+  flex-grow: 1; /* EXPANDS TO ABSORB 100% OF REMAINING HORIZONTAL SPACE */
+  background: transparent;
+  border: none;
+  color: #ffffff;
+  font-size: 0.95rem;
+  outline: none;
+}
+
+.search-input::placeholder {
+  color: #555f6d;
+}
+
+.btn-search {
+  flex-shrink: 0; /* NEVER SHRINKS */
+  background: #2563eb;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* 4. FLEX WRAP CARDS */
+.flex-cards-container {
+  display: flex;
+  flex-wrap: wrap; /* WRAPS DOWN ONCE ROW RUNS OUT OF ROOM */
+  gap: 16px;
+}
+
+.flex-card {
+  flex: 1 1 220px; /* grow: 1, shrink: 1, basis: 220px */
+  background: #181c23;
+  border: 1px solid #262c38;
+  padding: 20px;
+  border-radius: 6px;
+}
+
+.flex-card h4 {
+  font-size: 1rem;
+  color: #f9fafb;
+  margin-bottom: 6px;
+}
+
+.flex-card p {
+  font-size: 0.85rem;
+  color: #9ca3af;
+  margin-bottom: 14px;
+}
+
+.chip {
+  display: inline-block;
+  font-size: 0.7rem;
+  font-weight: 600;
+  padding: 2px 8px;
+  border-radius: 4px;
+  background: rgba(16, 185, 129, 0.15);
+  color: #34d399;
+}

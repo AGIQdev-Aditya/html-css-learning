@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Day 04 — Forms & Inputs Studio | Aditya</title>
+</head>
+
+<body>
+
+  <h1>Day 04 — Quality Assurance Registration & Inspection Form</h1>
+  <p>Practice writing accessible, validated form controls by hand.</p>
+  <hr>
+
+  <!-- FORM WRAPPER: Method POST for secure data dispatch -->
+  <form action="#" method="POST">
+
+    <!-- 1. TEXT INPUTS & VALIDATION -->
+    <fieldset>
+      <legend><strong>1. Inspector Identity & Authorization</strong></legend>
+      <p>
+        <label for="full-name">Full Name:</label><br>
+        <input type="text" id="full-name" name="inspector_name" placeholder="Aditya Agnihotri" required minlength="3">
+      </p>
+
+      <p>
+        <label for="work-email">Corporate Work Email:</label><br>
+        <input type="email" id="work-email" name="email" placeholder="aditya@adypu.edu.in" required>
+      </p>
+
+      <p>
+        <label for="passkey">Station Security Passkey:</label><br>
+        <input type="password" id="passkey" name="password" minlength="6" required>
+      </p>
+    </fieldset>
+
+    <br>
+
+    <!-- 2. RADIO BUTTONS & CHECKBOXES -->
+    <fieldset>
+      <legend><strong>2. Specimen Classification & Status</strong></legend>
+
+      <p><strong>Verdict Disposition (Single Choice - Radio):</strong></p>
+      <!-- All radio inputs share the name 'verdict' so only ONE can be checked! -->
+      <label>
+        <input type="radio" name="verdict" value="PASS" checked> PASS (Nominal)
+      </label><br>
+      <label>
+        <input type="radio" name="verdict" value="REWORK"> REWORK (Remediable)
+      </label><br>
+      <label>
+        <input type="radio" name="verdict" value="SCRAP"> SCRAP (Critical Defect)
+      </label>
+
+      <p><strong>Quality Certifications Verified (Multiple Choice - Checkbox):</strong></p>
+      <label>
+        <input type="checkbox" name="certs" value="ISO-9001" checked> ISO-9001:2015 Clause 8.5.1
+      </label><br>
+      <label>
+        <input type="checkbox" name="certs" value="IPC-A-610"> IPC-A-610 Class 3 Electronics Standard
+      </label><br>
+      <label>
+        <input type="checkbox" name="certs" value="FDA-GMP"> FDA 21 CFR Part 820 Cleanroom
+      </label>
+    </fieldset>
+
+    <br>
+
+    <!-- 3. DROPDOWNS, NUMBERS & RANGE -->
+    <fieldset>
+      <legend><strong>3. Metrology Measurements</strong></legend>
+
+      <p>
+        <label for="component-type">Component Category:</label><br>
+        <select id="component-type" name="category" required>
+          <option value="" disabled selected>Choose category...</option>
+          <option value="pcb">Printed Circuit Board (SMT)</option>
+          <option value="wafer">Silicon Semiconductor Wafer</option>
+          <option value="stamping">Automotive Stamped Bracket</option>
+        </select>
+      </p>
+
+      <p>
+        <label for="tolerance-slider">Tolerance Threshold Limit (0.01mm to 0.50mm):</label><br>
+        <input type="range" id="tolerance-slider" name="tolerance_limit" min="0.01" max="0.50" step="0.01" value="0.05">
+      </p>
+
+      <p>
+        <label for="sample-image">Upload Defect Specimen Photo:</label><br>
+        <input type="file" id="sample-image" name="specimen_file" accept="image/*">
+      </p>
+
+      <p>
+        <label for="notes">Rework Protocol & Corrective Notes:</label><br>
+        <textarea id="notes" name="notes" rows="4" cols="45" placeholder="Specify laser recalibration or tooling speed changes..."></textarea>
+      </p>
+    </fieldset>
+
+    <br>
+
+    <!-- 4. SUBMIT AND RESET BUTTONS -->
+    <button type="submit">Submit Official Audit Record</button>
+    <button type="reset">Reset Form Fields</button>
+
+  </form>
+
+</body>
+
+</html>

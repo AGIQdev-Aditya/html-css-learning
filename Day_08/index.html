@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Day 08 — Display & Positioning Laboratory</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- 1. STICKY TOP BAR -->
+  <header class="sticky-nav">
+    <div class="nav-content">
+      <span class="logo">POSITION_LAB // ADYPU</span>
+      <span class="status-indicator">● SYSTEM STICKY ACTIVE</span>
+    </div>
+  </header>
+
+  <main class="page-container">
+
+    <!-- 2. DISPLAY COMPARISON LAB -->
+    <section class="lab-section">
+      <h2 class="section-title">01. Display Modes: Inline vs Block vs Inline-Block</h2>
+      <p class="section-desc">Observe how tags behave when width and padding are applied.</p>
+
+      <div class="display-demo">
+        <span class="demo-inline">INLINE (span)</span>
+        <span class="demo-inline">INLINE 2</span>
+        <div class="demo-block">BLOCK (div takes full width)</div>
+        <span class="demo-inline-block">INLINE-BLOCK (Box that sits side-by-side)</span>
+        <span class="demo-inline-block">INLINE-BLOCK 2</span>
+      </div>
+    </section>
+
+    <!-- 3. RELATIVE + ABSOLUTE PAIRING LAB -->
+    <section class="lab-section">
+      <h2 class="section-title">02. Relative Container + Absolute Badge</h2>
+      <p class="section-desc">The industry standard: Parent is <code>position: relative</code>, badge is <code>position: absolute</code> pinned to top-right.</p>
+
+      <div class="cards-grid">
+        <article class="card">
+          <span class="badge badge-pulse">SALE 50%</span>
+          <h3 class="card-title">Pulsar 220F Fuel Controller</h3>
+          <p class="card-meta">Diagnostic hardware module for Pune workshop dyno tuning.</p>
+          <div class="card-footer">
+            <span class="price">₹4,250</span>
+            <button class="btn">Inspect</button>
+          </div>
+        </article>
+
+        <article class="card">
+          <span class="badge badge-neutral">IN STOCK</span>
+          <h3 class="card-title">OBD-II Wireless Scanner</h3>
+          <p class="card-meta">Bluetooth 5.0 telemetry reader with real-time CAN bus telemetry.</p>
+          <div class="card-footer">
+            <span class="price">₹1,890</span>
+            <button class="btn">Inspect</button>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- 4. Z-INDEX OVERLAP LAB -->
+    <section class="lab-section">
+      <h2 class="section-title">03. Z-Index Stacking Context</h2>
+      <p class="section-desc">Layered translucent glass panels showing depth ordering.</p>
+
+      <div class="stack-container">
+        <div class="stack-box box-1">z-index: 1 (Back)</div>
+        <div class="stack-box box-2">z-index: 5 (Middle)</div>
+        <div class="stack-box box-3">z-index: 10 (Front)</div>
+      </div>
+    </section>
+
+    <!-- Spacer to demonstrate scrolling and sticky nav -->
+    <div class="scroll-spacer">
+      <p>Scroll down to see the Sticky Navbar stick to the top and the Fixed Action Button stay locked to the screen!</p>
+    </div>
+
+  </main>
+
+  <!-- 5. FIXED FLOATING ACTION BUTTON -->
+  <aside class="floating-action">
+    <button class="fab-btn" title="Quick Support">⚡</button>
+  </aside>
+
+</body>
+</html>

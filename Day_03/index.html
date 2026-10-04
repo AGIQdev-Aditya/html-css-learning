@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Day 03 — Lists & Complex Tables | Aditya</title>
+</head>
+
+<body>
+
+  <h1>Day 03 — Structured Lists & Tabular Data Studio</h1>
+  <hr>
+
+  <!-- ================================================================
+       EXERCISE 1: UNORDERED & ORDERED NESTED LIST
+       Task: Create an ordered list of inspection stages with nested
+             bullet points under Stage 2!
+       ================================================================ -->
+  <section>
+    <h2>1. Optical Inspection Pipeline</h2>
+    <ol>
+      <li>Hardware Initialization</li>
+      <li>
+        Calibration Protocol
+        <!-- NESTED UNORDERED LIST: -->
+        <ul>
+          <li>Zero-point micrometer check (±0.005mm)</li>
+          <li>Dark-field illumination test</li>
+          <li>Telecentric lens focal alignment</li>
+        </ul>
+      </li>
+      <li>Neural Defect Inference</li>
+      <li>Automated Sorting & Disposition</li>
+    </ol>
+  </section>
+
+  <hr>
+
+  <!-- ================================================================
+       EXERCISE 2: DESCRIPTION LIST (<dl>, <dt>, <dd>)
+       Task: Create a technical glossary of 2 terms.
+       ================================================================ -->
+  <section>
+    <h2>2. Technical Quality Glossary</h2>
+    <dl>
+      <dt><strong>Solder Bridging</strong></dt>
+      <dd>An unwanted electrical short-circuit formed by excess molten solder joining adjacent pins.</dd>
+
+      <dt><strong>First-Pass Yield (FPY)</strong></dt>
+      <dd>The percentage of manufactured units that pass quality standards without requiring rework.</dd>
+    </dl>
+  </section>
+
+  <hr>
+
+  <!-- ================================================================
+       EXERCISE 3: COMPLEX TABLE WITH COLSPAN & ROWSPAN (EXAM CHALLENGE)
+       Task: Complete this table to represent a multi-shift factory log!
+       ================================================================ -->
+  <section>
+    <h2>3. Multi-Shift Factory Quality Audit</h2>
+
+    <table border="1" cellpadding="8" cellspacing="0">
+      <caption>Plant Line 4 — Daily Quality Matrix</caption>
+      <thead>
+        <tr>
+          <th>Shift</th>
+          <th>Inspector</th>
+          <th>Batch Serial</th>
+          <th>Defect Detected</th>
+          <th>Disposition</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Shift 1 with rowspan=2 (Spans 2 rows down!) -->
+        <tr>
+          <td rowspan="2"><strong>Morning (06:00 - 14:00)</strong></td>
+          <td>Rhugved Kulkarni</td>
+          <td>BATCH-2026-A1</td>
+          <td>Solder Bridging (0.42mm)</td>
+          <td>SCRAP</td>
+        </tr>
+        <tr>
+          <!-- Notice: Shift column is omitted here because row 1 spans into it! -->
+          <td>Vivek Gajdhane</td>
+          <td>BATCH-2026-A2</td>
+          <td>None (Nominal)</td>
+          <td>PASS</td>
+        </tr>
+
+        <!-- Shift 2 -->
+        <tr>
+          <td><strong>Evening (14:00 - 22:00)</strong></td>
+          <td>Aditya Sharma</td>
+          <td>BATCH-2026-B1</td>
+          <td>Micro-Crack Fatigue</td>
+          <td>REWORK</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <!-- Colspan=4 merges 4 columns horizontally! -->
+          <td colspan="4" align="right"><strong>Total Verified Units:</strong></td>
+          <td><strong>3 Units</strong></td>
+        </tr>
+      </tfoot>
+    </table>
+  </section>
+
+</body>
+
+</html>
