@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Day 02 — Links & Media Studio | Aditya</title>
+</head>
+
+<body>
+
+  <!-- ================================================================
+       EXERCISE 1: HEADER & INTERNAL JUMP NAVIGATION
+       Task: Create 3 anchor links that jump down to the sections below:
+             1. #photos-section
+             2. #audio-section
+             3. #external-links
+       ================================================================ -->
+  <header>
+    <h1>Aditya's Media & Navigation Studio</h1>
+    <nav>
+      <!-- WRITE YOUR JUMP LINKS HERE: -->
+      <a href="#photos-section">View Photos</a> |
+      <a href="#media-section">Media Players</a> |
+      <a href="#external-links">External Portals</a>
+    </nav>
+  </header>
+
+  <hr>
+
+  <!-- ================================================================
+       EXERCISE 2: RESPONSIVE IMAGES WITH SEMANTIC ALT TEXT
+       Task: Display the image below with width="450", proper alt text,
+             and link the image so clicking it opens Unsplash in a new tab!
+       ================================================================ -->
+  <section id="photos-section">
+    <h2>1. Precision Engineering Gallery</h2>
+    <p>Click the specimen below to inspect high-resolution optics:</p>
+
+    <!-- WRAP THIS IMG INSIDE AN <a> TAG POINTING TO UNSPLASH: -->
+    <a href="https://unsplash.com/photos/computer-chip-on-green-circuit-board" target="_blank" rel="noopener noreferrer">
+      <img 
+        src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=600&auto=format&fit=crop" 
+        alt="Macro photograph of high-density silicon microprocessor integrated circuit" 
+        width="450"
+        loading="lazy"
+      >
+    </a>
+  </section>
+
+  <hr>
+
+  <!-- ================================================================
+       EXERCISE 3: NATIVE AUDIO & VIDEO PLAYER
+       Task: Inspect how <audio> and <video> use fallback text.
+       ================================================================ -->
+  <section id="media-section">
+    <h2>2. Telemetry Acoustic & Optical Feed</h2>
+
+    <!-- AUDIO ELEMENT CHALLENGE: -->
+    <h3>Sensor Calibration Tone:</h3>
+    <audio controls>
+      <source src="https://actions.google.com/sounds/v1/science_fiction/alien_beacon.ogg" type="audio/ogg">
+      Your browser does not support the audio element.
+    </audio>
+
+    <!-- VIDEO ELEMENT CHALLENGE: -->
+    <h3>Automated Inspection Loop:</h3>
+    <video controls width="480" poster="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=600">
+      <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+      Your browser does not support the video element.
+    </video>
+  </section>
+
+  <hr>
+
+  <!-- ================================================================
+       EXERCISE 4: CONTACT & UTILITY HYPERLINKS
+       Task: Create a mailto link and a tel link.
+       ================================================================ -->
+  <footer id="external-links">
+    <h2>3. Direct Contact Channels</h2>
+    <p>
+      <!-- WRITE A MAILTO LINK TO YOUR EMAIL: -->
+      Email: <a href="mailto:aditya@nexcan.ai?subject=Inspection%20Inquiry">aditya@nexcan.ai</a>
+    </p>
+    <p>
+      <!-- WRITE A TEL LINK: -->
+      Emergency Terminal Dispatch: <a href="tel:+919876543210">+91 98765 43210</a>
+    </p>
+    <p>
+      <!-- JUMP BACK TO TOP: -->
+      <a href="#">↑ Back to Top of Page</a>
+    </p>
+  </footer>
+
+</body>
+
+</html>
