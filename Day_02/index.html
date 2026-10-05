@@ -34,7 +34,7 @@
        EXERCISE 2: LOCAL RELATIVE PATHS (WORKS 100% OFFLINE!)
        Task: Inspect how relative paths work:
              - "./specimen_report.html" opens another file in the SAME folder.
-             - "../assets/circuit_specimen.svg" climbs UP one level (..) 
+             - "./assets/circuit_specimen.svg" climbs UP one level (..) 
                and enters the assets/ folder!
        ================================================================ -->
   <section id="offline-assets">
@@ -47,7 +47,7 @@
     <figure>
       <a href="./specimen_report.html">
         <img 
-          src="../assets/circuit_specimen.svg" 
+          src="./assets/circuit_specimen.svg" 
           alt="Technical vector schematic of QFP-48 microprocessor" 
           width="420"
         >
@@ -101,7 +101,7 @@
 
     <!-- VIDEO ELEMENT CHALLENGE: -->
     <h3>Automated Inspection Video Loop:</h3>
-    <video controls width="420" poster="../assets/circuit_specimen.svg">
+    <video controls width="420" poster="./assets/circuit_specimen.svg">
       <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
       Your browser does not support the video element.
     </video>

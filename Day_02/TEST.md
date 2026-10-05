@@ -6,16 +6,16 @@ Rules: Try to answer in your head before clicking **Reveal Answer**.
 ---
 
 ### Question 1 (College Exam Classic — File Paths)
-**You are inside `Day_02/index.html`. You have an image located at `assets/circuit_specimen.svg` in the parent directory (`HTML Learning/assets/circuit_specimen.svg`). What is the correct relative path to put in `<img src="...">`?**
+**You are inside `Day_02/index.html`. You have an image located at `assets/circuit_specimen.svg` inside your current `Day_02/` folder. What is the correct relative path to put in `<img src="...">`?**
 
 <details>
 <summary>🔍 Reveal Answer</summary>
 
 **Answer:**  
-`../assets/circuit_specimen.svg`  
-- `..` moves you UP one folder from `Day_02/` into `HTML Learning/`.
+`./assets/circuit_specimen.svg` (or `assets/circuit_specimen.svg`)  
+- `./` indicates the CURRENT directory (`Day_02/`).
 - `/assets/circuit_specimen.svg` enters the `assets` folder and points to `circuit_specimen.svg`.
-- *Common student mistake:* Writing `/assets/...` (points to your Linux root `/`) or `./assets/...` (looks inside `Day_02/assets/` which does not exist).
+- *Contrast with parent directory:* If the image were one level above in the parent folder, you would use `../assets/...`. Writing `/assets/...` (with a leading slash) points to your Linux root `/` filesystem!
 </details>
 
 ---

@@ -47,13 +47,12 @@ Each daily lesson is strictly timed to respect your college study schedule:
 HTML & CSS Learning/
 ├── README.md               # Master curriculum & progress tracking
 ├── OFFLINE_CHEAT_SHEET.md  # 📘 100% Offline Master Reference & Viva Guide
-├── assets/                 # Offline vector schematics & media
-│   └── circuit_specimen.svg
 ├── Day_01/                 # Skeleton, Text Hierarchy & Semantics
 │   ├── NOTES.md
 │   ├── index.html
 │   └── TEST.md
 ├── Day_02/                 # Hyperlinks, Paths, Images & Media
+│   ├── assets/             # Offline local vector media (circuit_specimen.svg)
 │   ├── NOTES.md
 │   ├── index.html
 │   ├── specimen_report.html
